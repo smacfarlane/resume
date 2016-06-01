@@ -25,8 +25,8 @@
     - resume.work.each do |work|
       %h3
         = work.company
-        .pull-right.date-range
-          #{work.startDate} - #{work.endDate}
+      .date-range
+        #{work.startDate} - #{work.endDate}
       %h4= work.title
       %ul
         - work.highlights.each do |highlight|
@@ -36,10 +36,11 @@
     - resume.education.each do |edu|
       %h3
         = edu.institution
-        .pull-right.date-range= "#{edu.startDate} - #{edu.endDate}"
+      .date-range= "#{edu.startDate} - #{edu.endDate}"
 
-      %h4
-        Graduated #{edu.studyType}, #{edu.area}
+      %ul.list-inline
+        %li
+          Graduated #{edu.studyType}, #{edu.area}
 
     %h2 Languages
     %ul.list-inline
