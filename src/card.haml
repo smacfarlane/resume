@@ -1,0 +1,36 @@
+!!!html
+%head
+  %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"}
+  %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
+  %link{rel: "stylesheet", href: "css/resume.css"}
+  %title
+    Resume - Scott Macfarlane
+
+  %body
+    .container
+      .header
+        = resume.basics.name
+      .contact-details.clearfix
+        %span.icon
+          %i.fa.fa-fw.fa-2x.fa-phone
+        %span.info
+          = resume.basics.phone
+      .contact-details.clearfix
+        %span.icon
+          %i.fa.fa-fw.fa-2x.fa-envelope
+        %span.info
+          = resume.basics.email
+      .contact-details.clearfix
+        %span.icon
+          %i.fa.fa-fw.fa-2x.fa-github
+        %span.info
+          - @github = resume.basics.profiles.select{ |prof| prof.network == "GitHub" }.first
+          = @github.url
+      .contact-details.clearfix
+        %span.icon
+          %i.fa.fa-fw.fa-2x.fa-language
+        %span.info
+          - resume.languages.each do |language|
+            = language.name
+            %small= "(#{language.level})"
+            %br

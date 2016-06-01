@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    citrus (3.0.2)
+    haml (4.0.7)
+      tilt
+    tilt (2.0.4)
+    toml-rb (0.3.14)
+      citrus (~> 3.0, > 3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  toml-rb
+
+BUNDLED WITH
+   1.11.2

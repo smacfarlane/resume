@@ -1,0 +1,116 @@
+[basics]
+  name = "Scott Macfarlane"
+  label = "Software Engineer"
+  email = "macfarlane.scott@gmail.com"
+  phone = "(907) 750-5576"
+[basics.location]
+  address = "1365 Garay St."
+  postalCode = "AK 99709"
+  city = "Fairbanks"
+  countryCode = "US"
+  region = "Alaska"
+[[basics.profiles]]
+  network = "GitHub"
+  username = "smacfarlane"
+  url = "https://github.com/smacfarlane"
+
+[[work]]
+company = "University of Alaska Fairbanks, Geographic Information Network of Alaska"
+position = "Research and Web Programmer"
+startDate = "October 2011"
+endDate = "Present"
+highlights = [
+ "Implement automated processing and distribution of near-real-time satellite data",
+ "Develop and maintain Rails applications supporting scientific research and data discovery",
+ "Lead adoption of Chef in consolidated research IT organization",
+ "Advise faculty and staff in improving workflow and tools"
+]
+
+[[work]]
+company = "University of Alaska Fairbanks"
+position = "Systems Administrator"
+startDate = "September 2008"
+endDate = "October 2011"
+highlights = [
+  "Administered Linux Servers",
+  "Maintained and developed PHP and Rails applications",
+  "Supported faculty and student desktop computers"
+]
+
+[[work]]
+company = "Kashiwazaki City, Niigata Prefecture, Japan"
+position = "Assistant Language Teacher"
+startDate = "August 2005"
+endDate = "August 2008"
+highlights = [
+  "Developed lesson plans that encourage communication",
+  "Assisted Japanese teachers with in-class lessons",
+  "Lead summer seminars to improve Japanese teachers' English skills"
+]
+
+[[education]]
+institution = "University of Alaska Fairbanks"
+area = "Computer Science"
+studyType = "B.S."
+startDate = "1998"
+endDate = "2005"
+
+[[education]]
+institution = "Nagoya Gakuin University"
+area = "Foreign Language Studies"
+studyType = "Exchange Program"
+startDate = "2003"
+endDate = "2004"
+
+[[skills]]
+name = "Software Development"
+keywords = [
+  "Ruby",
+  "Elixir",
+  "Rails",
+  "Git"
+]
+
+[[skills]]
+name = "Ops"
+keywords = [
+  "Chef",
+  "Linux",
+  "Terraform",
+  "AWS"
+]
+
+# [[skills]]
+# name = "Out of Practice"
+# keywords = [
+#   "JavaScript"
+#   "CoffeeScript"
+#   "jQuery"
+# ]
+
+
+[[languages]]
+name = "English"
+level = "Native speaker"
+
+[[languages]]
+name = "Japanese"
+level = "Coversational"
+
+[[interests]]
+name = "Automation"
+
+[[interests]]
+name = "Reading"
+
+[[interests]]
+name = "Procedural Generation"
+#    "name": "Wildlife",
+#    "keywords": [
+#      "Ferrets",
+#      "Unicorns"
+#    ]
+
+[[references]]
+name = "Jeremiah Dabney"
+reference = "Dude... you know what? YOU make me laugh all the time! You ROCK Scott!"

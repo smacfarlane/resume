@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  /*font-family: 'Lato';*/
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font-size: 1.6em;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 1em;
+
+  .email {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .phone {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+h2 {
+  font-size: 1.4em;
+  border-width: 2px 0 1px 0;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  padding: 5px 0 5px 0;
+  margin: 20px 0 10px 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1em;
+  margin-top: 3px;
+  font-weight: normal;
+}
+
+.list-inline > li {
+  min-width: 30%;
+  padding-top: 5px;
+}
+
+.date-range {
+  font-size: .8em;
+  /*font-weight: bold;*/
+}
+
+.sub-text {
+  font-style: italic;
+  display: inline-block;
+}
+
+span.icon {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+span.info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contact-details {
+  padding: 10px 0;
+}
+
+/*.container {
+  max-width: 350px;
+}*/

@@ -1,0 +1,45 @@
+!!!html
+%head
+  %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"}
+  %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
+  %link{rel: "stylesheet", href: "css/resume.css"}
+  %title
+    Resume - Scott Macfarlane
+%body
+  .container
+    %h1= resume.basics.name
+    .contact-heading
+      .email= resume.basics.email
+      .phone= resume.basics.phone
+
+    %h2 Skills
+    %ul.list-inline
+      - resume.skills.map(&:keywords).flatten.each do |keyword|
+        %li= keyword
+
+    %h2 Experience
+    - resume.work.each do |work|
+      %h3
+        = work.company
+        .pull-right.date-range
+          #{work.startDate} - #{work.endDate}
+      %h4= work.title
+      %ul
+        - work.highlights.each do |highlight|
+          %li= highlight
+
+    %h2 Education
+    - resume.education.each do |edu|
+      %h3
+        = edu.institution
+        .pull-right.date-range= "#{edu.startDate} - #{edu.endDate}"
+
+      %h4
+        Graduated #{edu.studyType}, #{edu.area}
+
+    %h2 Languages
+    %ul.list-inline
+      - resume.languages.each do |language|
+        %li
+          #{language.name}
+          .sub-text= "(#{language.level})"
