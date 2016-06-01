@@ -4,5 +4,4 @@
   * rake
   * haml
   * toml
-* Pandoc
-* LaTeX
+* wkhtmltopdf
