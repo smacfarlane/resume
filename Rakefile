@@ -38,7 +38,7 @@ task :publish do
   abort "Uncommitted changes!" unless sh("git diff-index --quiet HEAD --")
 
   Rake::Task['default'].invoke
-  sh("git commit -am 'Update html and pdf'")
+  sh("git add *html *pdf && git commit -m 'Update html and pdf'")
   sh("git tag -f #{Time.now.strftime("%Y.%m.%d")}")
   sh("git push && git push --tags")
 end
