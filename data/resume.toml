@@ -20,9 +20,9 @@ position = "Research and Web Programmer"
 startDate = "October 2011"
 endDate = "Present"
 highlights = [
- "Implement automated processing and distribution of near-real-time satellite data",
  "Develop and maintain Rails applications supporting scientific research and data discovery",
- "Lead adoption of Chef among research IT staff",
+ "Lead adoption and implmentation of Chef among research IT staff",
+ "Implement automated processing and distribution of near-real-time satellite data",
  "Advise faculty and staff in improving workflow and tools"
 ]
 
