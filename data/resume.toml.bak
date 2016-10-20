@@ -21,7 +21,7 @@ startDate = "October 2011"
 endDate = "Present"
 highlights = [
  "Develop and maintain Rails applications supporting scientific research and data discovery",
- "Lead implementation of Chef",
+ "Lead implmentation of Chef",
  "Implement automated processing and distribution of near-real-time satellite data",
  "Advise faculty and staff in improving workflow and tools"
 ]
